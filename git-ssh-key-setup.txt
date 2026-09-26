@@ -1,0 +1,8 @@
+# 1. make the public and private keys:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+# 2. add the public key to github
+# 3. check if your ssh agent is working:
+eval "$(ssh-agent -s)"
+# 4. add your private key to the agent
+ssh-add ~/.ssh/id_ed25519
+

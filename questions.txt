@@ -1,0 +1,13 @@
+1. where do g++ and gcc look for header files? where does cmake look for header files?
+/usr/local/include?
+/usr/local/lib?
+2. where are the build-essentials tools installed to?
+3. what is the point of not using cmake as the build command?
+to manually control compilation of whatever? 
+to get rid of the confusion of not knowing how cmake works?
+4. make vs cmake? why use one over the other?
+cmake is a build configuration generator
+make is a build tool
+cmake uses make to build after making build configs (Makefiles)
+5. pkg-config appears to be a way to get arguments for building source using gcc or g++
+6. 

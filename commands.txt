@@ -1,0 +1,20 @@
+#install sdl3 dependencies
+https://wiki.libsdl.org/SDL3/README-linux#build-dependencies
+
+#install build tools
+sudo apt update
+sudo apt install build-essential gdb cmake -y
+#check versions
+g++ --version
+cmake --version
+
+#cmake build the app
+#set source input and build output directories
+#then build the app with specified options
+cmake -S . -B build
+cmake --build build -j 8
+
+#run the app
+cd build/Debug
+./hello
+
